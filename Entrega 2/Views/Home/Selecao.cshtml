@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="text-center">
+        <h1>
+            Avaliação de Funcionário
+        </h1>
+        <i class="fas fa-users fa-8x"></i>
+        <br><br>
+        <div class="form-group">
+            <label>Selecione o Funcionário:</label>
+            <select id="func" class="form-control">
+                <option>Matheus Eidi</option>
+                <option>Guilherme Ronco</option>
+                <option>Lucas Lopes Resende</option>
+            </select>
+            <br>
+            <label>Selecione o Setor:</label>
+            <select class="form-control">
+                <option>Setor A</option>
+                <option>Setor B</option>
+                <option>Setor C</option>
+                <option>Setor D</option>
+            </select>
+        </div>
+        <br>
+        <a href="@Url.Action("Termos", "Home")" class="btn btn-primary">VOLTAR</a>
+        <button onclick="aux()" class="btn btn-primary">
+            BUSCAR
+        </button>
+    </div>
+</div>
+
+@section scripts{
+  <script>
+      function aux(){
+            console.log("oi");
+            window.location.href = 'https://localhost:5001/Home/Desempenho?name=' + document.getElementById("func").value;
+      }
+  </script>
+}

@@ -1,0 +1,44 @@
+
+<div class="container">
+    <div class="text-center">
+         <h1>
+             Avaliação do Funcionário <p style="color: orange;">@ViewData["Nome"]</p>
+        </h1>
+        <i class="fas fa-globe fa-8x"></i>
+        <br>
+        <h4>
+            Habilidades Pessoais Sociais/Educação<br>
+            Selecione as habilidades deste funcionário:
+        </h4>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+            <label class="custom-control-label" for="defaultUnchecked">Comunicativo</label><br>
+            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+            <label class="custom-control-label" for="defaultUnchecked">Bom Líder</label><br>
+            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+            <label class="custom-control-label" for="defaultUnchecked">Proativo</label><br>
+            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+            <label class="custom-control-label" for="defaultUnchecked">Executa bem as tarefas</label><br>
+            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+            <label class="custom-control-label" for="defaultUnchecked">Outros</label><br>
+        </div>
+        <br>
+        <h4>
+            Escreva possíveis habilidades extras do mesmo (OPCIONAL):
+        </h4>
+        <textarea rows="4" cols="80" placeholder="Digite aqui..."></textarea>
+        <br><br>
+        <h4>
+            Qual o nível de colaboração que você acha que tal<br>
+            funcionário exerce a empresa?
+        </h4>
+        <div class="radio">
+            <label><input type="radio" name="optradio" checked>Colabora muito</label><br>
+            <label><input type="radio" name="optradio">Colabora médio</label><br>
+            <label><input type="radio" name="optradio">Colabora pouco</label><br>
+        </div>
+        <br>
+        <a href="@Url.Action("Desempenho", "Home")" class="btn btn-primary">VOLTAR</a>
+        <a href="@Url.Action("FeedbackGeral", "Home")" class="btn btn-primary">CONTINUAR</a>
+    </div>
+</div>
