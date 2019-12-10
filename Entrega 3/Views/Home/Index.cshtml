@@ -1,0 +1,43 @@
+﻿
+<div class="container">
+    <div class="text-center">
+         <h1>
+            Bem Vindo(a)!
+        </h1>
+        <i class="fas fa-user-friends fa-8x"></i>
+        <br>
+        <h4>
+            Este é um formulário de avaliação de funcionários 360° para sua empresa!<br> 
+            Acreditamos na importância do feedback como ferramenta de desenvolvimento na empresa e que,<br>
+            mais do que auxiliar o profissional a melhorar, tem reflexo direto no sucesso de uma organização.
+        </h4>
+        <br>
+        <a href="@Url.Action("Termos", "Home")" class="btn btn-primary">COMEÇAR</a>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src=" ~/lib/modal-steps.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" 
+        crossorigin="anonymous">
+    </script>   
+    <script src="bootstrap.min.js"></script>
+
+    <script>
+        $('#myModal').modalSteps();
+
+        $('#myModal').modalSteps({
+            btnCancelHtml: "Cancel",
+            btnPreviousHtml: "Previous",
+            btnNextHtml: "Next",
+            btnLastStepHtml: "Complete",
+            disableNextButton: false,
+            completeCallback: function() {},
+            callbacks: {},
+            getTitleAndStep: function() {}
+        });
+    </script>
+}

@@ -1,0 +1,79 @@
+
+<div class="container">
+    <div class="text-center">
+        <h1>
+            Não seja tímido!
+        </h1>
+        <i class="fas fa-eye-slash fa-8x"></i>
+        <br>
+        <h4>
+            Este formulário zela por todos os direitos de privacidade dos nossos usuários, não tendo, <br>
+            em hipótese alguma, vazamento de dados sobre quem preencheu o quê! Fique tranquilo!
+        </h4>
+        <br>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">
+            POLÍTICAS DE PRIVACIDADE
+        </button>
+        <br><br>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
+            TERMOS DE USO
+        </button>
+        <br><br><br>
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">VOLTAR</a>
+        <a href="@Url.Action("Selecao", "Home")" class="btn btn-primary">PRÓXIMO</a>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Políticas de Privacidade</h5>
+      </div>
+      <div class="modal-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat, dui vel consequat porta, 
+             dolor enim placerat metus, eget sollicitudin augue sapien et libero. Mauris placerat justo sed augue 
+             vulputate convallis. Praesent interdum lacus laoreet, vulputate sem id, mollis neque. Nam non nunc lorem. 
+             Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus molestie 
+             dictum lorem, nec dictum neque scelerisque non. Maecenas ut leo dolor. Quisque a urna tortor. 
+             Quisque blandit metus eu pharetra tempor. In hac habitasse platea dictumst. Integer at odio sit 
+             amet magna convallis accumsan sed a ligula. Nunc egestas bibendum cursus. Donec vel fermentum ipsum. 
+             Ut imperdiet accumsan mollis. In enim quam, sagittis eu est nec, interdum blandit nisl. Sed neque libero, 
+             porta nec augue vitae, imperdiet dictum orci.
+          </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Termos de Uso</h5>
+      </div>
+      <div class="modal-body">
+          <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat, dui vel consequat porta, 
+             dolor enim placerat metus, eget sollicitudin augue sapien et libero. Mauris placerat justo sed augue 
+             vulputate convallis. Praesent interdum lacus laoreet, vulputate sem id, mollis neque. Nam non nunc lorem. 
+             Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus molestie 
+             dictum lorem, nec dictum neque scelerisque non. Maecenas ut leo dolor. Quisque a urna tortor. 
+             Quisque blandit metus eu pharetra tempor. In hac habitasse platea dictumst. Integer at odio sit 
+             amet magna convallis accumsan sed a ligula. Nunc egestas bibendum cursus. Donec vel fermentum ipsum. 
+             Ut imperdiet accumsan mollis. In enim quam, sagittis eu est nec, interdum blandit nisl. Sed neque libero, 
+             porta nec augue vitae, imperdiet dictum orci.
+          </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>

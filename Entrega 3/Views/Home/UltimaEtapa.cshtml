@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="text-center">
+         <h1>
+            Avaliação do Funcionário <p style="color: orange;">@ViewData["Nome"]</p>
+        </h1>
+        <i class="far fa-check-circle fa-8x"></i>
+        <br>
+        <h4>
+            Última etapa!<br><br>
+            Diga para nós: O funcionário resolve os problemas de <br>
+            forma rápida e eficiente?
+        </h4>
+        <br>
+        <h4>
+            Comentários:
+        </h4>
+        <textarea rows="4" cols="80" placeholder="Digite aqui..."></textarea>
+        <br><br>
+        <a href="@Url.Action("FeedbackGeral", "Home")" class="btn btn-primary">VOLTAR</a>
+        <a href="@Url.Action("Final", "Home")" class="btn btn-primary">FINALIZAR</a>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<style>
+body{text-align: center; padding-top: 50px}
+
+.estrelas input[type=radio] {
+  display: none;
+}
+.estrelas label i.fa{
+  font-size: 2.5em
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+}
+</style>
+
+<div class="container">
+    <div class="text-center">
+        <h1>
+            Avaliação do Funcionário <p style="color: orange;">@ViewData["Nome"]</p>
+        </h1>
+        <i class="far fa-thumbs-up fa-8x"></i>
+        <br>
+        <h4>
+           Desempenho em relação ao cumprimento das obrigações do profissional<br>
+           O que você  acha do trabalho deste profissional?
+        </h4>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <div class="estrelas">
+            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+            <label for="cm_star-1"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+            <label for="cm_star-2"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+            <label for="cm_star-3"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+            <label for="cm_star-4"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+            <label for="cm_star-5"><i class="fa"></i></label>
+            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+        </div>
+        <br>
+        <a href="@Url.Action("Selecao", "Home")" class="btn btn-primary">VOLTAR</a>
+        <a href="@Url.Action("Habilidades", "Home")" class="btn btn-primary">CONTINUAR</a>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="text-center">
+         <h1>
+            Avaliação do Funcionário <p style="color: orange;">@ViewData["Nome"]</p>
+        </h1>
+        <i class="far fa-comment-dots fa-8x"></i>
+        <br>
+        <h4>
+            <h4>
+            Dê um feedback geral (ou qualquer tipo de comentário, positivo e negativo, que <br>
+            não foi perguntado) à respeito do funcionário, tão qual seus aspectos legais<br>
+            e éticos com relação à cultura e norma da empresa:
+        </h4>
+        <textarea rows="4" cols="80" placeholder="Digite aqui..."></textarea>
+        <br><br>
+        <a href="@Url.Action("AspectosLegais", "Home")" class="btn btn-primary">VOLTAR</a>
+        <a href="@Url.Action("UltimaEtapa", "Home")" class="btn btn-primary">CONTINUAR</a>
+    </div>
+</div>
